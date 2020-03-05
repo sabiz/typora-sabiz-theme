@@ -1,0 +1,40 @@
+/*
+## color memo
+#AE81FF
+#A1EFE4
+*/
+
+$colorBackground: #49483E;
+$colorBackgroundDarker: darken($colorBackground, 5%);
+$colorBackgroundDarken: darken($colorBackgroundDarker, 5%);
+$colorBackgroundLighter: lighten($colorBackground, 10%);
+$colorBackgroundLighten: lighten($colorBackgroundLighter, 10%);
+$colorText: #F8F8F2;
+
+$colorRed: #F92672;
+$colorGreen: #A6E22E;
+$colorBlue: #66D9EF;
+$colorOrange: #FD971F;
+
+:root {
+    --bg-color: #{$colorBackground};
+    --side-bar-bg-color: #{$colorBackgroundDarker};
+    --text-color: #{$colorText};
+    --code-block-bg-color: inherit;//#f8f8f8;
+
+    --item-hover-bg-color: #0a0d16;
+    --control-text-color: #b7b7b7;
+    --control-text-hover-color: #eee;
+    --window-border: 1px dashed #9b9b9b;
+
+    --active-file-bg-color: #{$colorBackgroundDarken};
+    --active-file-border-color: #{$colorRed};
+
+    --primary-color: #a3d5fe;
+
+    --active-file-text-color: white;
+    --item-hover-bg-color: #70717d;
+    --item-hover-text-color: white;
+    --primary-color: #6dc1e7;
+}
+

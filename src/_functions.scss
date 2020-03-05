@@ -1,0 +1,5 @@
+
+@function faSvg($type, $name) {
+    @return "../node_modules/@fortawesome/fontawesome-free/svgs/"+$type+"/"+$name+".svg";
+}
+
