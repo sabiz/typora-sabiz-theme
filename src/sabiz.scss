@@ -304,13 +304,13 @@ tt,
 var {
     background: rgba(0, 0, 0, 0.05);
     font-size: 0.875rem;
-    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-family: $fontsCode
 }
 
 pre.md-fences {
     padding: 10px 30px;
     margin-bottom: 20px;
-    border: 1px solid;
+    border: 1px solid $colorBackgroundLighter;
 }
 
 .md-fences .code-tooltip {
