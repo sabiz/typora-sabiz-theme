@@ -8,6 +8,9 @@ switch(process.platform) {
     case 'darwin':
         destPath = `${process.env["HOME"]}/Library/ApplicationSupport/abnerworks.Typora/themes`;
         break;
+    case 'win32':
+        destPath = `${process.env["USERPROFILE"]}\\AppData\\Roaming\\Typora\\themes`;
+        break;
     default:
         console.error("Not Supported...");
         process.exit(1);
