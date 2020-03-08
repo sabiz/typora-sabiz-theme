@@ -247,7 +247,7 @@ ol {
     /* 30px */
 }
 
-ul {
+ul:not(.dropdown-menu) {
     list-style: none;
 
     >:not(.task-list-item)::before {
@@ -626,11 +626,13 @@ h6.md-focus .md-attr,
 /** UI for electron */
 
 .context-menu {
-    background-color: #42464A;
-}
+    background-color: $colorBackgroundDarker;
 
-.context-menu.dropdown-menu .divider {
-    background-color: #777777;
+    &.dropdown-menu {
+        .divider {
+            background-color: $colorBackgroundLighter;
+        }
+    }
 }
 
 footer {
