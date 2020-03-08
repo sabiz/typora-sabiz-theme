@@ -14,7 +14,6 @@ html,
 body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background: #363B40;
     background: var(--bg-color);
     fill: currentColor;
 }
@@ -465,8 +464,8 @@ td {
 }
 
 .md-table-edit {
-    border-top: 1px solid gray;
-    background-color: #363B40;
+    border-top: 1px solid $colorBackgroundLighter;
+    background-color: $colorBackgroundDarker;
 }
 
 .popover-title {
@@ -507,7 +506,7 @@ td {
 }
 
 #write div.md-toc-tooltip {
-    background-color: #363B40;
+    background-color: $colorBackgroundDarker;
 }
 
 .dropdown-menu .btn:hover,
@@ -550,8 +549,8 @@ td {
 }
 
 .outline-item:hover {
-    border-color: #363B40;
-    background-color: #363B40;
+    border-color: $colorBackgroundDarker;
+    background-color: $colorBackgroundDarker;
     color: white;
 }
 
