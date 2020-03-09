@@ -1,5 +1,6 @@
 @import "palette";
 @import "variables";
+@import "base";
 @import "functions";
 
 @import "mermaid.dark";
@@ -7,15 +8,15 @@
 @import "sourcemode.dark";
 
 html {
-    font-size: 16px;
+    @extend %base-style;
+    @extend %base-color;
+    @extend %base-font;
 }
 
-html,
 body {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    background: var(--bg-color);
-    fill: currentColor;
+    @extend %base-style;
+    @extend %base-color;
+    @extend %base-font;
 }
 
 #write {
@@ -23,14 +24,12 @@ body {
     padding-top: 20px;
 }
 
-html,
-body,
 button,
 input,
 select,
 textarea,
 div.code-tooltip-content {
-    color: var(--text-color);
+    @extend %base-color;
 }
 
 div.code-tooltip,
@@ -42,15 +41,11 @@ div.code-tooltip,
     border-bottom-color: #{$colorBackgroundDarker};
 }
 
-html,
-body,
 button,
 input,
 select,
 textarea {
-    font-style: normal;
-    line-height: 1rem;
-    font-family: $fontsView;
+    @extend %base-font;
 }
 
 hr {
