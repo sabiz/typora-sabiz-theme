@@ -22,6 +22,48 @@ body {
 #write {
     max-width: 914px;
     padding-top: 20px;
+
+    &>*:first-child {
+        margin-top: 40px;
+    }
+
+    &>h3:before,
+    &>h4:before,
+    &>h5:before,
+    &>h6:before {
+        border: none;
+        border-radius: 0px;
+        color: #888;
+        text-decoration: underline;
+        left: -1.4rem;
+        top: 0.2rem;
+    }
+
+    &>h3.md-focus:before {
+        top: 2px;
+    }
+
+    &>h4.md-focus:before {
+        top: 2px;
+    }
+
+    pre.md-meta-block {
+        border-bottom: 1px dashed #ccc;
+        background: transparent;
+        padding-bottom: 0.6em;
+        line-height: 1.6em;
+    }
+
+    div.md-toc-tooltip {
+        background-color: $colorBackgroundDarker;
+    }
+
+    .md-focus {
+        .md-diagram-panel {
+            border: 1px solid #ddd;
+            margin-left: -30px;
+        }
+    }
 }
 
 button,
@@ -337,9 +379,6 @@ a {
     transition: all .2s ease-in-out;
 }
 
-#write>*:first-child {
-    margin-top: 40px;
-}
 
 h1 {
     margin-top: 2em;
@@ -445,12 +484,6 @@ td {
   background-color: #fff;
 }
 
-#write pre.md-meta-block {
-    border-bottom: 1px dashed #ccc;
-    background: transparent;
-    padding-bottom: 0.6em;
-    line-height: 1.6em;
-}
 
 .btn,
 .btn .btn-default {
@@ -476,33 +509,11 @@ td {
     color: #DDD;
 }
 
-#write>h3:before,
-#write>h4:before,
-#write>h5:before,
-#write>h6:before {
-    border: none;
-    border-radius: 0px;
-    color: #888;
-    text-decoration: underline;
-    left: -1.4rem;
-    top: 0.2rem;
-}
-
-#write>h3.md-focus:before {
-    top: 2px;
-}
-
-#write>h4.md-focus:before {
-    top: 2px;
-}
 
 .md-toc-item {
     color: #A8C2DC;
 }
 
-#write div.md-toc-tooltip {
-    background-color: $colorBackgroundDarker;
-}
 
 .dropdown-menu .btn:hover,
 .dropdown-menu .btn:focus,
@@ -791,11 +802,6 @@ footer {
 }
 
 
-/*diagrams*/
-#write .md-focus .md-diagram-panel {
-    border: 1px solid #ddd;
-    margin-left: -30px;
-}
 
 .md-diagram-panel-error {
     color: #f1908e;
