@@ -1,8 +1,3 @@
-/*
-## color memo
-#AE81FF
-#A1EFE4
-*/
 
 $colorBackground: #49483E;
 $colorBackgroundDarker: darken($colorBackground, 5%);
@@ -15,6 +10,8 @@ $colorRed: #F92672;
 $colorGreen: #A6E22E;
 $colorBlue: #66D9EF;
 $colorOrange: #FD971F;
+$colorPurple: #AE81FF;
+$colorLightBlue: #A1EFE4;
 
 :root {
     --bg-color: #{$colorBackground};
