@@ -293,7 +293,7 @@ ul:not(.dropdown-menu) {
     }
 
     >:not(.task-list-item){
-        p {
+        >p {
             position: relative;
             top: -1em;
         }
