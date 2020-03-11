@@ -11,6 +11,9 @@ switch(process.platform) {
     case 'win32':
         destPath = `${process.env["USERPROFILE"]}\\AppData\\Roaming\\Typora\\themes`;
         break;
+    case 'linux':
+        destPath = `${process.env["HOME"]}/.config/Typora/themes`;
+        break;
     default:
         console.error("Not Supported...");
         process.exit(1);
