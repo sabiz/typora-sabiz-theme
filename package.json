@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build.js",
     "dev": "npm run build dev",
-    "install": "npm run build && node scripts/install.js"
+    "deploy": "npm run build && node scripts/install.js"
   },
   "author": "sAbIz",
   "license": "MIT",
