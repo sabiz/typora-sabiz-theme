@@ -663,6 +663,10 @@ footer {
     color: #dedede;
 }
 
+.megamenu-menu {
+    background-color: $colorBackgroundLighter;
+}
+
 .megamenu-content,
 .megamenu-opened header {
     background: var(--bg-color);
