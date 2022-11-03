@@ -36,7 +36,7 @@ jobs:
       run: |
         cd release
         rm -rf *
-        cp ../master/dist/* .
+        cp -r ../master/dist/* .
         git config user.email "sabiz@github.com"
         git config user.name "sAbIz"
         git add .
