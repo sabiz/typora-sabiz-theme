@@ -1,0 +1,35 @@
+@use "palette" as plt;
+
+@font-face {
+    font-family: 'HackGen';
+    src: url('sabiz/HackGen/HackGen-Regular.ttf');
+}
+
+:root {
+    --bg-color: #{plt.$bg};
+    --side-bar-bg-color: #{plt.$lighter-bg};
+    --text-color: #{plt.$text};
+    --primary-color: #{plt.$hilight};
+    --item-hover-bg-color: #{plt.$lighten-bg};
+    --active-file-bg-color: #{plt.$lighten-bg};
+    --active-file-border-color: #{plt.$hilight};
+    --sabiz-font-family: HackGen;
+
+    // Default
+    --select-text-bg-color:#4A89DC;
+    --control-text-color: #b7b7b7;
+    --control-text-hover-color: #eee;
+    --window-border: 1px solid #555;
+    --active-file-text-color: white;
+    --rawblock-edit-panel-bd: #333;
+    --search-select-bg-color: #428bca;
+    --item-hover-text-color: white;
+}
+
+html {
+    font-family: var(--sabiz-font-family);
+}
+
+@import "markdown.scss";
+@import "megamenu.scss";
+@import "monokai.scss";

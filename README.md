@@ -1,3 +1,13 @@
 # [Typora](https://typora.io/) sAbIz Theme
 
-This theme customizes [Typora night theme](https://github.com/typora/typora-default-themes) in a molokai style
+
+
+My theme..
+
+
+
+## Thanks
+
+[Font] : [HackGen](https://github.com/yuru7/HackGen)
+
+[Code block] : [CodeMirror monokai theme](https://github.com/codemirror/codemirror5) 

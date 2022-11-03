@@ -1,0 +1,74 @@
+@use "palette" as plt;
+
+div#write {
+    width: 85%;
+}
+
+
+pre.md-meta-block {
+    background-color: var(--item-hover-bg-color);
+}
+
+h1.md-heading {
+    padding-bottom: 3px;
+    border-bottom: 3px solid var(--primary-color);
+    border-image: linear-gradient(to right, var(--primary-color), plt.$hilight-gradient-to);
+    border-image-slice: 1;
+}
+
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+hr {
+    border-top: none;
+    border-bottom: 1px solid var(--primary-color);
+    border-image: linear-gradient(to right, var(--primary-color), plt.$hilight-gradient-to);
+    border-image-slice: 1;
+}
+
+blockquote {
+    padding-left: 8px;
+    border-left: 5px solid var(--primary-color);
+    border-image: linear-gradient(to bottom, var(--primary-color), plt.$hilight-gradient-to);
+    border-image-slice: 1;
+    background-color: rgba(plt.$lighten-bg, 0.5);
+}
+
+span.md-pair-s[md-inline="code"] {
+    background-color: var(--item-hover-bg-color);
+    border-radius: 3px;
+    padding: 5px
+}
+
+pre.md-fences {
+    div.CodeMirror {
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+div.code-tooltip {
+    background-color: plt.$lighten-bg;
+}
+
+thead {
+    border-bottom: 2px solid plt.$text;
+}
+
+th {
+    padding: 3px 0 3px 0;
+}
+
+tr {
+    border-bottom: 1px dotted plt.$mix-text-bg;
+}
+
+span.md-link{
+    a {
+        text-decoration:none;
+        border-bottom: 1px solid plt.$link-text;
+        color: plt.$link-text;
+    }
+}

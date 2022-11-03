@@ -1,38 +1,11 @@
+$bg: #200F21;
+$lighter-bg: #382039;
+$lighten-bg: #5A3D5C;
 
-$colorBackground: #49483E;
-$colorBackgroundDarker: darken($colorBackground, 5%);
-$colorBackgroundDarken: darken($colorBackgroundDarker, 5%);
-$colorBackgroundLighter: lighten($colorBackground, 10%);
-$colorBackgroundLighten: lighten($colorBackgroundLighter, 10%);
-$colorText: #F8F8F2;
+$text: #FEFBF6;
+$link-text: #8D9EFF;
 
-$colorRed: #F92672;
-$colorGreen: #A6E22E;
-$colorBlue: #66D9EF;
-$colorOrange: #FD971F;
-$colorPurple: #AE81FF;
-$colorLightBlue: #A1EFE4;
+$hilight: #F638DC;
+$hilight-gradient-to: #333399;
 
-:root {
-    --bg-color: #{$colorBackground};
-    --side-bar-bg-color: #{$colorBackgroundDarker};
-    --text-color: #{$colorText};
-    --code-block-bg-color: inherit;//#f8f8f8;
-
-    --item-hover-bg-color: #0a0d16;
-    --control-text-color: #b7b7b7;
-    --control-text-hover-color: #eee;
-    --window-border: 1px dashed #9b9b9b;
-
-    --active-file-bg-color: #{$colorBackgroundDarken};
-    --active-file-border-color: #{$colorRed};
-
-    --primary-color: #a3d5fe;
-
-    --active-file-text-color: white;
-    --item-hover-bg-color: #70717d;
-    --item-hover-text-color: white;
-    --primary-color: #6dc1e7;
-    --rawblock-edit-panel-bd: #{$colorBackgroundLighten};
-}
-
+$mix-text-bg: mix($text, $bg);

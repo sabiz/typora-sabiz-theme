@@ -1,0 +1,25 @@
+@use "palette" as plt;
+
+.megamenu-menu {
+    background-color: var(--side-bar-bg-color);
+}
+
+.megamenu-menu-header {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.megamenu-content {
+    background: var(--bg-color);
+}
+
+.megamenu-opened header {
+    background: var(--bg-color);
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: inherit;
+}
+
+#recent-file-panel-action-btn {
+    background-color: inherit;
+}
