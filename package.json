@@ -2,20 +2,18 @@
   "name": "typora-sabiz-theme",
   "version": "2.0.0",
   "description": "Typora theme",
-  "main": "index.js",
   "scripts": {
     "build": "node scripts/build.js",
-    "dev": "npm run build dev",
+    "dev": "node scripts/build.js -- dev",
     "deploy:dev": "run-s dev deploy",
     "deploy:build": "run-s build deploy",
     "deploy": "node scripts/install.js"
   },
-  "author": "sAbIz",
-  "license": "MIT",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
-    "fs-extra": "^10.1.0",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.55.0"
+    "autoprefixer": "^10.0.0",
+    "cssnano": "^7.1.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1"
   }
 }
