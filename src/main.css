@@ -8,62 +8,62 @@
 
 :root {
     --sabiz-font-family: HackGen;
-    --sabiz-bg-primary: #0d0b0e;
-    --sabiz-bg-secondary: #151217;
-    --sabiz-bg-tertiary: #1f1b22;
-    --sabiz-bg-accent: #1a171c;
+    --sabiz-bg-primary: 13, 11, 14;
+    --sabiz-bg-secondary: 21, 18, 23;
+    --sabiz-bg-tertiary: 31, 27, 34;
+    --sabiz-bg-accent: 26, 23, 28;
 
-    --sabiz-text-primary: #c8c4be;
-    --sabiz-text-secondary: #938c96;
-    --sabiz-text-muted: #5a545d;
+    --sabiz-text-primary: 200, 196, 190;
+    --sabiz-text-secondary: 147, 140, 150;
+    --sabiz-text-muted: 90, 84, 93;
 
-    --sabiz-accent-primary: #4a7c7e;
-    --sabiz-accent-secondary: #5a8f92;
-    --sabiz-accent-bright: #6fa3a6;
-    --sabiz-accent-dark: #2c4f51;
+    --sabiz-accent-primary: 74, 124, 126;
+    --sabiz-accent-secondary: 90, 143, 146;
+    --sabiz-accent-bright: 111, 163, 166;
+    --sabiz-accent-dark: 44, 79, 81;
 
-    --sabiz-link: #4a7c7e;
-    --sabiz-link-hover: #6fa3a6;
+    --sabiz-link: 74, 124, 126;
+    --sabiz-link-hover: 111, 163, 166;
 
-    --sabiz-highlight: #8b6882;
-    --sabiz-highlight-alt: #4a7c7e;
-    --sabiz-accent: #4a3d58;
+    --sabiz-highlight: 139, 104, 130;
+    --sabiz-highlight-alt: 74, 124, 126;
+    --sabiz-accent: 74, 61, 88;
 
-    --sabiz-gradient-primary: linear-gradient(135deg, var(--sabiz-accent-dark) 0%, var(--sabiz-highlight) 100%);
-    --sabiz-gradient-bg: linear-gradient(180deg, var(--sabiz-bg-primary) 0%, var(--sabiz-bg-secondary) 50%, var(--sabiz-bg-tertiary) 100%);
+    --sabiz-gradient-primary: linear-gradient(135deg, rgb(var(--sabiz-accent-dark)) 0%, rgb(var(--sabiz-highlight)) 100%);
+    --sabiz-gradient-bg: linear-gradient(180deg, rgb(var(--sabiz-bg-primary)) 0%, rgb(var(--sabiz-bg-secondary)) 50%, rgb(var(--sabiz-bg-tertiary)) 100%);
     --sabiz-gradient-subtle: linear-gradient(90deg, rgba(74, 124, 126, 0.05) 0%, rgba(139, 104, 130, 0.05) 100%);
-    --sabiz-gradient-text: linear-gradient(120deg, var(--sabiz-accent-primary) 0%, var(--sabiz-highlight) 100%);
+    --sabiz-gradient-text: linear-gradient(120deg, rgb(var(--sabiz-accent-primary)) 0%, rgb(var(--sabiz-highlight)) 100%);
 
 
 }
 /* Typora Theme Variables */
 :root {
-    --bg-color: var(--sabiz-bg-primary);
-    --text-color: var(--sabiz-text-primary);
-    --md-char-color: var(--sabiz-text-muted);
-    --meta-content-color: var(--sabiz-accent-primary);
+    --bg-color: rgb(var(--sabiz-bg-primary));
+    --text-color: rgb(var(--sabiz-text-primary));
+    --md-char-color: rgb(var(--sabiz-text-muted));
+    --meta-content-color: rgb(var(--sabiz-accent-primary));
 
-    --primary-color: var(--sabiz-accent-primary);
-    --primary-btn-border-color: var(--sabiz-accent-dark);
-    --primary-btn-text-color: var(--sabiz-text-secondary);
+    --primary-color: rgb(var(--sabiz-accent-primary));
+    --primary-btn-border-color: rgb(var(--sabiz-accent-dark));
+    --primary-btn-text-color: rgb(var(--sabiz-text-secondary));
 
-    --window-border: 1px solid var(--sabiz-bg-tertiary);
+    --window-border: 1px solid rgb(var(--sabiz-bg-tertiary));
 
-    --active-file-bg-color: var(--sabiz-bg-secondary);
-    --active-file-text-color: var(--sabiz-text-primary);
-    --active-file-border-color: var(--sabiz-accent-primary);
+    --active-file-bg-color: rgb(var(--sabiz-bg-secondary));
+    --active-file-text-color: rgb(var(--sabiz-text-primary));
+    --active-file-border-color: rgb(var(--sabiz-accent-primary));
 
-    --side-bar-bg-color: var(--sabiz-bg-primary);
+    --side-bar-bg-color: rgb(var(--sabiz-bg-primary));
     --item-hover-bg-color: rgba(74, 124, 126, 0.13);
-    --item-hover-text-color: var(--sabiz-text-primary);
+    --item-hover-text-color: rgb(var(--sabiz-text-primary));
     --monospace: 'Fira Code', 'Courier New', monospace;
 
-    --heading-char-color: var(--sabiz-text-secondary);
+    --heading-char-color: rgb(var(--sabiz-text-secondary));
 }
 
 html,
 body {
-    font-family: var(--sabiz-font-family), sans-serif;
+    font-family: rgb(var(--sabiz-font-family)), sans-serif;
     background: var(--sabiz-gradient-bg);
 }
 
@@ -73,7 +73,7 @@ content {
 }
 
 #write {
-    background: linear-gradient(90deg, var(--sabiz-bg-secondary), var(--sabiz-bg-tertiary));
-    padding: 0 10px;
+    background: linear-gradient(90deg, rgb(var(--sabiz-bg-secondary)), rgb(var(--sabiz-bg-tertiary)));
+    padding: 10px;
     border-radius: 4px;
 }

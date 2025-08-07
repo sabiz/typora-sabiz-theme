@@ -1,11 +1,10 @@
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: var(--sabiz-accent-primary);
-    background: linear-gradient(120deg, var(--sabiz-accent-primary) 0%, var(--sabiz-highlight) 100%);
+    color: rgb(var(--sabiz-accent-primary));
+    background: linear-gradient(120deg, rgb(var(--sabiz-accent-primary)) 0%, rgb(var(--sabiz-highlight)) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -18,7 +17,33 @@ h6 {
 
 h1 {
     font-size: 3rem;
+    background: var(--sabiz-gradient-primary);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: -10px;;
+    border-radius: 4px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(var(-sabiz-accent-primary), 0.2);
 }
+
+@keyframes shimmer {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(var(--sabiz-accent-primary), 0.2) 0%, transparent 70%);
+    animation: shimmer 3s infinite;
+}
+
 
 h2 {
     font-size: 2.5rem;
@@ -42,7 +67,7 @@ h6 {
 
 h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
     font-size: 12px;
-    -webkit-text-fill-color: var(--sabiz-text-secondary);
+    -webkit-text-fill-color: rgb(var(--sabiz-text-secondary));
 }
 
 p {
