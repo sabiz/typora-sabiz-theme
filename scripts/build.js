@@ -24,7 +24,10 @@ fs.removeSync(OUT_DIRECTORY_PATH);
 
 fs.mkdirsSync(OUT_DIRECTORY_PATH);
 
-const plugins = [autoprefixer(), postcssImport()];
+const plugins = [
+    autoprefixer(),
+    postcssImport(),
+];
 if (buildType === BUILD_TYPE_RELEASE) {
     plugins.push(cssnano());
 }
