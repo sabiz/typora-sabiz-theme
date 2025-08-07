@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'HackGen';
+    src: url('sabiz/HackGen/HackGenConsoleNF-Regular.ttf');
+}
+
+:root {
+    --sabiz-font-family: HackGen;
+}
+
+html {
+    font-family: var(--sabiz-font-family);
+}
+
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
