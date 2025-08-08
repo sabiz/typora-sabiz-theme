@@ -1,4 +1,5 @@
 @import './typography.css';
+@import './elements.css';
 
 @font-face {
     font-family: 'HackGen';
@@ -56,14 +57,14 @@
     --side-bar-bg-color: rgb(var(--sabiz-bg-primary));
     --item-hover-bg-color: rgba(74, 124, 126, 0.13);
     --item-hover-text-color: rgb(var(--sabiz-text-primary));
-    --monospace: 'Fira Code', 'Courier New', monospace;
+    --monospace: var(--sabiz-font-family), monospace;
 
     --heading-char-color: rgb(var(--sabiz-text-secondary));
 }
 
 html,
 body {
-    font-family: rgb(var(--sabiz-font-family)), sans-serif;
+    font-family: var(--sabiz-font-family), sans-serif;
     background: var(--sabiz-gradient-bg);
 }
 
