@@ -4,3 +4,51 @@ hr {
     background-color: rgba(var(--sabiz-text-muted), 0.6);
     margin: 2.5rem 0;
 }
+
+.ul-list {
+    color: rgb(var(--sabiz-text-secondary));
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.md-list-item:not(.md-task-list-item) {
+    margin: 0.5rem 0;
+}
+
+.md-list-item:not(.md-task-list-item)::marker {
+    color: rgb(var(--sabiz-accent-primary));
+}
+
+.task-list-item > input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid rgb(var(--sabiz-accent-primary));
+    width: 1.2em !important;
+    height: 1.2em !important;
+    margin-right: 0.7em;
+    border-radius: 0.3em;
+    background: linear-gradient(135deg, rgba(var(--sabiz-bg-secondary), 0.7), rgba(var(--sabiz-bg-tertiary), 0.9));
+    vertical-align: middle;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: absolute;
+    left: -0.2em;
+    top: -0.2em;
+}
+
+.task-list-item > input[type="checkbox"]:checked {
+    background: linear-gradient(135deg, rgb(var(--sabiz-accent-primary)), rgb(var(--sabiz-highlight)));
+    border-color: rgb(var(--sabiz-accent-bright));
+}
+
+.task-list-item > input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 0.2em;
+    top: 0.15em;
+    width: 0.7em;
+    height: 0.7em;
+    pointer-events: none;
+    /* X mark */
+    background:
+        linear-gradient(45deg, transparent 44%, rgb(var(--sabiz-text-primary)) 45%, rgb(var(--sabiz-text-primary)) 55%, transparent 56%),
+        linear-gradient(-45deg, transparent 44%, rgb(var(--sabiz-text-primary)) 45%, rgb(var(--sabiz-text-primary)) 55%, transparent 56%);
+}

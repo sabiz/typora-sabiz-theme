@@ -40,7 +40,10 @@ h6 {
     font-size: 1.5rem;
 }
 
-h3.md-focus:before, h4.md-focus:before, h5.md-focus:before, h6.md-focus:before {
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
     font-size: 12px;
     -webkit-text-fill-color: rgb(var(--sabiz-text-secondary));
 }
@@ -52,5 +55,37 @@ p {
 
 a {
     color: rgb(var(--sabiz-link));
-    /* text-decoration: none; */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(var(--sabiz-link-hover));
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, rgb(var(--sabiz-accent-primary)) 0%, rgb(var(--sabiz-accent-secondary)) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+code {
+    background: rgba(var(--sabiz-accent-primary), 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+    border: 1px solid rgba(var(--sabiz-accent-primary), 0.2);
+    color: rgb(var(--sabiz-accent-bright));
 }
