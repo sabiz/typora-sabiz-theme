@@ -62,6 +62,8 @@
     --monospace: var(--sabiz-font-family), monospace;
 
     --heading-char-color: rgb(var(--sabiz-text-secondary));
+
+    --rawblock-edit-panel-bd: linear-gradient(145deg, rgba(var(--sabiz-bg-primary), 0.8), rgba(var(--sabiz-bg-secondary), 0.8));
 }
 
 html,
