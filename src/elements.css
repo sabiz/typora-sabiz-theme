@@ -1,3 +1,11 @@
+/* Meta data block Styles */
+pre.md-meta-block {
+    background: transparent;
+    color: rgb(var(--sabiz-text-muted));
+    font-size: 0.9em;
+}
+
+/* Horizontal Rule Styles */
 hr {
     border: 0;
     height: 1px;
