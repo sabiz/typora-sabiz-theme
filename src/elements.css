@@ -135,3 +135,12 @@ blockquote {
     padding: 1rem;
     border-radius: 0.5rem;
 }
+
+/* Image Styles */
+.md-image>.md-meta {
+    color: rgb(var(--sabiz-text-secondary));
+}
+
+p>.md-image:only-child:not(.md-img-error) img, p>img:only-child {
+    margin: inherit;
+}
