@@ -124,3 +124,14 @@ tbody tr:hover td:first-child,
 tbody tr:hover th:first-child {
     border-left: 4px solid rgb(var(--sabiz-accent-primary));
 }
+
+/* Blockquote Styles */
+blockquote {
+    border-left: 4px solid rgb(var(--sabiz-accent-primary));
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    background: rgba(var(--sabiz-accent-primary), 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
