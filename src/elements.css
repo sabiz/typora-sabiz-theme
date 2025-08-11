@@ -52,3 +52,7 @@ hr {
         linear-gradient(45deg, transparent 44%, rgb(var(--sabiz-text-primary)) 45%, rgb(var(--sabiz-text-primary)) 55%, transparent 56%),
         linear-gradient(-45deg, transparent 44%, rgb(var(--sabiz-text-primary)) 45%, rgb(var(--sabiz-text-primary)) 55%, transparent 56%);
 }
+
+.task-list-done {
+    text-decoration: line-through;
+}

@@ -1,6 +1,7 @@
 @import './typography.css';
 @import './elements.css';
 @import './codeblock.css';
+@import './mermaid.css';
 
 @font-face {
     font-family: 'HackGen';
