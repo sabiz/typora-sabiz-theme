@@ -32,12 +32,6 @@
     --sabiz-highlight-alt: 74, 124, 126;
     --sabiz-accent: 74, 61, 88;
 
-    --sabiz-gradient-primary: linear-gradient(135deg, rgb(var(--sabiz-accent-dark)) 0%, rgb(var(--sabiz-highlight)) 100%);
-    --sabiz-gradient-bg: linear-gradient(180deg, rgb(var(--sabiz-bg-primary)) 0%, rgb(var(--sabiz-bg-secondary)) 50%, rgb(var(--sabiz-bg-tertiary)) 100%);
-    --sabiz-gradient-subtle: linear-gradient(90deg, rgba(74, 124, 126, 0.05) 0%, rgba(139, 104, 130, 0.05) 100%);
-    --sabiz-gradient-text: linear-gradient(120deg, rgb(var(--sabiz-accent-primary)) 0%, rgb(var(--sabiz-highlight)) 100%);
-
-
 }
 /* Typora Theme Variables */
 :root {
