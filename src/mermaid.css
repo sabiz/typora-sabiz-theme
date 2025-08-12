@@ -1,0 +1,7 @@
+:root {
+  --mermaid-theme: "dark";
+  --mermaid-font-family: "HackGen", "trebuchet ms", verdana, arial, sans-serif;
+  --mermaid-sequence-numbers: "on";
+  --mermaid-flowchart-curve: "linear";
+  --mermaid--gantt-left-padding: 75;
+}

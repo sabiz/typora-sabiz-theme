@@ -1,0 +1,83 @@
+@import './typography.css';
+@import './elements.css';
+@import './codeblock.css';
+@import './mermaid.css';
+
+@font-face {
+    font-family: 'HackGen';
+    src: url('sabiz/HackGen/HackGenConsoleNF-Regular.ttf');
+}
+
+
+:root {
+    --sabiz-font-family: HackGen;
+    --sabiz-bg-primary: 13, 11, 14;
+    --sabiz-bg-secondary: 21, 18, 23;
+    --sabiz-bg-tertiary: 31, 27, 34;
+    --sabiz-bg-accent: 26, 23, 28;
+
+    --sabiz-text-primary: 200, 196, 190;
+    --sabiz-text-secondary: 147, 140, 150;
+    --sabiz-text-muted: 90, 84, 93;
+
+    --sabiz-accent-primary: 74, 124, 126;
+    --sabiz-accent-secondary: 90, 143, 146;
+    --sabiz-accent-bright: 111, 163, 166;
+    --sabiz-accent-dark: 44, 79, 81;
+
+    --sabiz-link: 74, 124, 126;
+    --sabiz-link-hover: 111, 163, 166;
+
+    --sabiz-highlight: 139, 104, 130;
+    --sabiz-highlight-alt: 74, 124, 126;
+    --sabiz-accent: 74, 61, 88;
+
+}
+/* Typora Theme Variables */
+:root {
+    --bg-color: rgb(var(--sabiz-bg-primary));
+    --text-color: rgb(var(--sabiz-text-primary));
+    --md-char-color: rgb(var(--sabiz-text-muted));
+    --meta-content-color: rgb(var(--sabiz-accent-primary));
+
+    --primary-color: rgb(var(--sabiz-accent-primary));
+    --primary-btn-border-color: rgb(var(--sabiz-accent-dark));
+    --primary-btn-text-color: rgb(var(--sabiz-text-secondary));
+
+    --window-border: 1px solid rgb(var(--sabiz-bg-tertiary));
+
+    --active-file-bg-color: rgb(var(--sabiz-bg-secondary));
+    --active-file-text-color: rgb(var(--sabiz-text-primary));
+    --active-file-border-color: rgb(var(--sabiz-accent-primary));
+
+    --side-bar-bg-color: rgb(var(--sabiz-bg-primary));
+    --item-hover-bg-color: rgba(74, 124, 126, 0.13);
+    --item-hover-text-color: rgb(var(--sabiz-text-primary));
+    --monospace: var(--sabiz-font-family), monospace;
+
+    --heading-char-color: rgb(var(--sabiz-text-secondary));
+
+    --rawblock-edit-panel-bd: linear-gradient(145deg, rgba(var(--sabiz-bg-primary), 0.8), rgba(var(--sabiz-bg-secondary), 0.8));
+}
+
+html,
+body {
+    font-family: var(--sabiz-font-family), sans-serif;
+    background-color: rgb(var(--sabiz-bg-primary));
+}
+
+content {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 3rem;;
+}
+
+#write {
+    background: linear-gradient(90deg, rgb(var(--sabiz-bg-secondary)), rgb(var(--sabiz-bg-tertiary)));
+    padding: 10px;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: rgb(var(--sabiz-bg-primary)) !important;
+}

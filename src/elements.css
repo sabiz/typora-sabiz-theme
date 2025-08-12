@@ -1,0 +1,184 @@
+/* Meta data block Styles */
+pre.md-meta-block {
+    background: transparent;
+    color: rgb(var(--sabiz-text-muted));
+    font-size: 0.9em;
+}
+
+/* Horizontal Rule Styles */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(var(--sabiz-text-muted), 0.6);
+    margin: 2.5rem 0;
+}
+
+/* List Styles */
+.ul-list {
+    color: rgb(var(--sabiz-text-secondary));
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.md-list-item:not(.md-task-list-item) {
+    margin: 0.5rem 0;
+}
+
+.md-list-item:not(.md-task-list-item)::marker {
+    color: rgb(var(--sabiz-accent-primary));
+}
+
+.task-list-item>input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid rgb(var(--sabiz-accent-primary));
+    width: 1.2em !important;
+    height: 1.2em !important;
+    margin-right: 0.7em;
+    border-radius: 0.3em;
+    background: linear-gradient(135deg, rgba(var(--sabiz-bg-secondary), 0.7), rgba(var(--sabiz-bg-tertiary), 0.9));
+    vertical-align: middle;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: absolute;
+    left: -0.2em;
+    top: -0.2em;
+}
+
+.task-list-item>input[type="checkbox"]:checked {
+    background: linear-gradient(135deg, rgb(var(--sabiz-accent-primary)), rgb(var(--sabiz-highlight)));
+    border-color: rgb(var(--sabiz-accent-bright));
+}
+
+.task-list-item>input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 0.2em;
+    top: 0.15em;
+    width: 0.7em;
+    height: 0.7em;
+    pointer-events: none;
+    /* X mark */
+    background:
+        linear-gradient(45deg, transparent 44%, rgb(var(--sabiz-text-primary)) 45%, rgb(var(--sabiz-text-primary)) 55%, transparent 56%),
+        linear-gradient(-45deg, transparent 44%, rgb(var(--sabiz-text-primary)) 45%, rgb(var(--sabiz-text-primary)) 55%, transparent 56%);
+}
+
+.task-list-done {
+    text-decoration: line-through;
+}
+
+/* Table Styles */
+table {
+    border-collapse: separate;
+    border-radius: 8px;
+    border: 1px solid rgba(var(--sabiz-text-muted), 0.2);
+}
+
+
+thead tr {
+    background: linear-gradient(to right, rgba(var(--sabiz-accent-primary), 0.3), rgba(var(--sabiz-bg-secondary), 0.7));
+}
+
+thead th {
+    background: transparent;
+    letter-spacing: 0.05em;
+}
+
+thead th:first-child {
+    padding-left: 17px;
+    border-top-left-radius: 8px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(var(--sabiz-text-muted), 0.2);
+}
+
+tbody tr {
+    background-color: rgba(var(--sabiz-bg-primary), 0.9);
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: rgba(var(--sabiz-bg-secondary), 0.5);
+}
+
+tbody tr:hover {
+    background-color: rgba(var(--sabiz-accent-primary), 0.1);
+}
+
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+td:first-child {
+    border-left: 4px solid transparent;
+}
+
+tbody tr:hover td:first-child,
+tbody tr:hover th:first-child {
+    border-left: 4px solid rgb(var(--sabiz-accent-primary));
+}
+
+/* Blockquote Styles */
+blockquote {
+    border-left: 4px solid rgb(var(--sabiz-accent-primary));
+    padding-left: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    background: rgba(var(--sabiz-accent-primary), 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* Image Styles */
+.md-image>.md-meta {
+    color: rgb(var(--sabiz-text-secondary));
+}
+
+p>.md-image:only-child:not(.md-img-error) img, p>img:only-child {
+    margin: inherit;
+}
+
+/* LaTeX Math Block Theme */
+.md-math-block mjx-container {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    font-size: 1.2em;
+    overflow-x: auto;
+}
+
+.md-rawblock-after, .md-rawblock-input, .md-rawblock-before {
+    font-size: 1.1rem;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+    text-align: inherit !important;
+}
+
+/* Footnote Styles */
+sup.md-footnote {
+    background: rgb(var(--sabiz-bg-primary));
+    color: rgb(var(--sabiz-text-primary));
+}
+
+.code-tooltip.md-hover-tip {
+    background: rgb(var(--sabiz-bg-primary));
+    color: rgb(var(--sabiz-text-primary));
+    font-size: 0.9em;
+}
