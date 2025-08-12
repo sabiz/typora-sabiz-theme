@@ -69,16 +69,21 @@
 html,
 body {
     font-family: var(--sabiz-font-family), sans-serif;
-    background: var(--sabiz-gradient-bg);
+    background-color: rgb(var(--sabiz-bg-primary));
 }
 
 content {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 3rem;;
 }
 
 #write {
     background: linear-gradient(90deg, rgb(var(--sabiz-bg-secondary)), rgb(var(--sabiz-bg-tertiary)));
     padding: 10px;
     border-radius: 4px;
+}
+
+footer {
+    background-color: rgb(var(--sabiz-bg-primary)) !important;
 }
