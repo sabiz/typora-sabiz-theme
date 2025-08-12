@@ -1,44 +1,28 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Node.js CI
+name: Release
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-      with:
-        path: master
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14.x
-    - name: build
-      run: |
-        cd master
-        npm ci
-        npm run build --if-present
-        cd ../
-    - name: Checkout [release]
-      uses: actions/checkout@v2
-      with:
-        ref: release
-        path: release
-    - name: commit
-      run: |
-        cd release
-        rm -rf *
-        cp -r ../master/dist/* .
-        git config user.email "sabiz@github.com"
-        git config user.name "sAbIz"
-        git add .
-        git commit -m "update"
-        git push origin release
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: node scripts/build.js
+
+      - name: Upload theme artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: sabiz-typora-theme
+          path: dist/
