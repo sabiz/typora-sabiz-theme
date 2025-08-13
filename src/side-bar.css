@@ -1,0 +1,7 @@
+.file-tree-node.active .fa-file-text-o:before {
+    color: var(--active-file-border-color);
+}
+
+.active-tab-files #info-panel-tab-file .info-panel-tab-border, .active-tab-outline #info-panel-tab-outline .info-panel-tab-border {
+    background-color: var(--active-file-border-color);
+}
