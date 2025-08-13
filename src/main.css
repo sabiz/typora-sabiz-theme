@@ -3,6 +3,7 @@
 @import './codeblock.css';
 @import './mermaid.css';
 @import './side-bar.css';
+@import './megamenu.css';
 
 @font-face {
     font-family: 'HackGen';

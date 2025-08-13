@@ -1,0 +1,119 @@
+.megamenu-opened header {
+    background-color: inherit;
+    background-image: none;
+}
+
+body.megamenu-opened>content {
+    filter: blur(4px);
+}
+
+
+.megamenu-menu {
+    background-color: rgb(var(--sabiz-bg-tertiary));
+    color: rgb(var(--sabiz-text-primary));
+    border-right: 1px solid rgb(var(--sabiz-bg-accent));
+}
+
+.megamenu-menu-header {
+    background-color: rgb(var(--sabiz-bg-tertiary));
+    border-bottom: 1px solid rgb(var(--sabiz-bg-accent));
+    color: rgb(var(--sabiz-accent-primary));
+}
+
+.megamenu-menu-list li a {
+    color: rgb(var(--sabiz-text-primary));
+}
+
+.megamenu-menu-list li a.active,
+.megamenu-menu-list:not(.saved) li a:hover {
+    background-color: var(--item-hover-bg-color);
+    color: var(--item-hover-text-color);
+}
+
+.megamenu-content {
+    background: linear-gradient(to bottom, rgba(var(--sabiz-bg-tertiary), 0.7), rgba(var(--sabiz-bg-secondary), 1));
+    color: rgb(var(--sabiz-text-primary));
+}
+
+.theme-preview-div {
+    border-color: rgb(var(--sabiz-accent-primary));
+}
+
+.theme-preview-div.active,
+.theme-preview-div.active:hover {
+    border-color: rgb(var(--sabiz-accent-bright));
+}
+
+.long-btn,
+#recent-file-panel-action-btn {
+    background-color: rgb(var(--sabiz-bg-secondary));
+    color: rgb(var(--sabiz-text-primary));
+    border: 1px solid rgb(var(--sabiz-accent-primary));
+}
+
+.long-btn:hover,
+#recent-file-panel-action-btn:hover {
+    background-color: var(--item-hover-bg-color);
+    color: var(--item-hover-text-color) !important;
+}
+
+.megamenu {
+    background: rgb(var(--sabiz-bg-primary));
+    color: rgb(var(--sabiz-text-primary));
+    border: 1px solid rgb(var(--sabiz-bg-tertiary));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
+
+
+
+.megamenu a,
+.megamenu button {
+    color: rgb(var(--sabiz-text-primary));
+    background: none;
+    border: none;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
+
+.megamenu a:hover,
+.megamenu button:hover {
+    background: var(--item-hover-bg-color);
+}
+
+
+
+.megamenu a:active,
+.megamenu button:active {
+    background: rgb(var(--sabiz-bg-tertiary));
+}
+
+
+
+.megamenu .submenu {
+    background: rgb(var(--sabiz-bg-primary));
+    border: 1px solid rgb(var(--sabiz-bg-tertiary));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+
+
+.megamenu .submenu a {
+    color: rgb(var(--sabiz-text-primary));
+}
+
+.megamenu a:focus,
+.megamenu button:focus {
+    outline: 2px solid rgb(var(--sabiz-text-primary));
+    outline-offset: 2px;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: inherit;
+}
