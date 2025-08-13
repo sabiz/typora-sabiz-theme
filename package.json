@@ -1,6 +1,6 @@
 {
   "name": "typora-sabiz-theme",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Typora theme",
   "scripts": {
     "build": "node scripts/build.js",
