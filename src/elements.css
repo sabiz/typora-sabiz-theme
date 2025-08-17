@@ -14,7 +14,8 @@ hr {
 }
 
 /* List Styles */
-.ul-list {
+.ul-list,
+.ol-list {
     color: rgb(var(--sabiz-text-secondary));
     margin: 1rem 0;
     padding-left: 1.5rem;
@@ -149,7 +150,8 @@ blockquote {
     color: rgb(var(--sabiz-text-secondary));
 }
 
-p>.md-image:only-child:not(.md-img-error) img, p>img:only-child {
+p>.md-image:only-child:not(.md-img-error) img,
+p>img:only-child {
     margin: inherit;
 }
 
@@ -163,7 +165,9 @@ p>.md-image:only-child:not(.md-img-error) img, p>img:only-child {
     overflow-x: auto;
 }
 
-.md-rawblock-after, .md-rawblock-input, .md-rawblock-before {
+.md-rawblock-after,
+.md-rawblock-input,
+.md-rawblock-before {
     font-size: 1.1rem;
 }
 

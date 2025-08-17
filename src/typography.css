@@ -85,3 +85,10 @@ a::after {
 a:hover::after {
     transform: scaleX(1);
 }
+
+code {
+    background: rgba(var(--sabiz-accent-primary), 0.3);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(var(--sabiz-accent-primary), 0.5);
+}
